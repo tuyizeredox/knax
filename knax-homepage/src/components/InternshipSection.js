@@ -15,7 +15,7 @@ const InternshipSection = () => {
     };
 
     return (
-        <Box sx={{ padding: '50px', background: 'linear-gradient(135deg, #1e3c72, #2a5298)', borderRadius: '12px', margin: '20px', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)', color: '#fff' }}>
+        <Box sx={{ padding: '50px', background: 'linear-gradient(135deg, #141e30, #243b55)', borderRadius: '12px', margin: '20px', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.3)', color: '#fff' }}>
             <Typography variant="h4" align="center" sx={{ marginBottom: '20px', fontWeight: 'bold' }}>
                 🚀 Elevate Your Career – Join Our Internship Program!
             </Typography>
