@@ -1,106 +1,122 @@
-/* src/styles.css */
+/* Updated styles.css for a more modern and attractive look */
+
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Darker text color for better readability */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4 {
-    margin: 20px 0; /* Reduced margin for better spacing */
-    color: #2c3e50; /* Darker color for headings */
+    margin: 20px 0;
+    color: #2c3e50;
+    font-weight: 700;
 }
 
 button {
-    border-radius: 25px; /* More rounded buttons */
-    padding: 12px 24px; /* Added padding for better button size */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    border-radius: 30px;
+    padding: 14px 28px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    border: none;
+    cursor: pointer;
 }
 
 button:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.07);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 a {
-    color: #3498db; /* Updated link color for vibrancy */
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
-    color: #2980b9; /* Darker shade on hover */
+    color: #2980b9;
+    text-decoration: underline;
 }
 
-/* Custom styles for components */
+/* General container styling */
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px; /* Increased padding for a spacious layout */
+    padding: 50px;
 }
 
 .section {
-    border-radius: 16px; /* More rounded corners */
-    margin: 30px 0; /* Increased margin for better separation */
-    padding: 40px; /* Increased padding for a more spacious feel */
-    background-color: #ffffff; /* White background for sections */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    border-radius: 20px;
+    margin: 40px 0;
+    padding: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
+.section:hover {
+    transform: translateY(-5px);
+}
+
+/* Background Colors */
 .primary-bg {
-    background-color: #6200ea; /* Vibrant purple for sections */
+    background: linear-gradient(135deg, #6200ea, #9b51e0);
+    color: #ffffff;
 }
 
 .secondary-bg {
-    background-color: #03dac6; /* Teal color for contrast */
+    background: linear-gradient(135deg, #03dac6, #00bfa5);
+    color: #ffffff;
 }
 
+/* Buttons */
 .button-primary {
-    background-color: #bb86fc; /* Softer purple for primary buttons */
+    background: linear-gradient(135deg, #4a90e2, #357ae8);
     color: #ffffff;
 }
 
 .button-secondary {
-    background-color: #ff5722; /* Bright orange for secondary buttons */
-    color: #ffffff; /* White text for contrast */
+    background: linear-gradient(135deg, #ff5722, #e64a19);
+    color: #ffffff;
 }
 
 .button:hover {
-    opacity: 0.9; /* Slightly darker on hover */
+    opacity: 0.95;
 }
 
-/* New styles for Product Marketplace */
+/* Card Styles */
 .card {
     transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* New styles for Call to Action */
+/* Call to Action Section */
 .call-to-action {
-    background-color: #e74c3c; /* Modern red */
-    border-radius: 16px;
-    padding: 60px; /* Increased padding */
-    margin: 20px;
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    border-radius: 20px;
+    padding: 60px;
+    margin: 30px;
+    color: #ffffff;
+    text-align: center;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* New styles for Business Growth */
+/* Business Growth Section */
 .business-growth {
-    background-color: #8e44ad; /* Vibrant purple */
-    border-radius: 16px;
-    padding: 60px; /* Increased padding */
-    margin: 20px;
+    background: linear-gradient(135deg, #8e44ad, #6f1e86);
+    border-radius: 20px;
+    padding: 60px;
+    margin: 30px;
+    color: #ffffff;
+    text-align: center;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* New styles for buttons */
-.button-primary {
-    background-color: #3498db; /* Modern blue */
-    color: #ffffff;
-}
-
-.button-secondary {
-    background-color: #e67e22; /* Modern orange */
-    color: #ffffff;
 }
