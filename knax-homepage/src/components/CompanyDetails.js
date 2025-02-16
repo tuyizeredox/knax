@@ -1,12 +1,11 @@
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
 import { FaLaptop, FaDesktop, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const CompanyDetails = () => {
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-900 text-white p-6">
-            <Card className="max-w-xl w-full bg-gray-800 shadow-xl rounded-2xl p-6">
-                <CardContent className="text-center">
+            <div className="max-w-xl w-full bg-gray-800 shadow-xl rounded-2xl p-6">
+                <div className="text-center">
                     <h2 className="text-3xl font-bold text-blue-400 mb-2">Knax Technology Ltd</h2>
                     <h3 className="text-lg font-semibold text-gray-300">@knax_250Technology</h3>
                     <p className="mt-4 text-gray-400">We provide high-quality computers and accessories</p>
@@ -31,8 +30,8 @@ const CompanyDetails = () => {
                         <FaMapMarkerAlt className="text-red-400" />
                         <span>Makuza Peace Plaza, Nyarugenge, Kigali, Rwanda</span>
                     </p>
-                </CardContent>
-            </Card>
+                </div>
+            </div>
         </div>
     );
 };
