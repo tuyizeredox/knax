@@ -3,7 +3,7 @@ import { FaLaptop, FaDesktop, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const CompanyDetails = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-gray-100 to-gray-300 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-white p-6">
+            <div style={{ backgroundColor: '#2c3e50', padding: '50px', color: '#ffffff', textAlign: 'center' }}>
             <div className="max-w-lg w-full bg-white dark:bg-gray-800 bg-opacity-80 dark:bg-opacity-90 backdrop-blur-xl shadow-2xl rounded-2xl p-8 transform transition duration-500 hover:scale-105">
                 <div className="text-center">
                     <h2 className="text-4xl font-extrabold text-blue-600 dark:text-blue-400 mb-4">Knax Technology Ltd</h2>
