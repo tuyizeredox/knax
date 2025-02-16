@@ -5,7 +5,7 @@ import './Header.css'; // Import the CSS file for styles
 const Header = ({ isDarkMode, setIsDarkMode }) => {
     return (
         <header className={`header ${isDarkMode ? 'dark' : 'light'}`}>
-            <h1 className="logo">Knax</h1>
+            <h1 className="logo">Knax 250</h1>
             <nav>
                 <ul className="nav-links">
                     <li><a href="#products">Products</a></li>
