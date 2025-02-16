@@ -1,0 +1,76 @@
+/* knax-homepage/src/components/HeroSection.css */
+.hero-container {
+    background-image: url('/public/online.jpg'); /* Add a background image */
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(247, 160, 0);
+    background-size: cover;
+    background-position: center;
+    font-size: 40px;
+    padding: 20px; /* Added padding for better spacing */
+    position: relative; /* For positioning of pseudo-elements */
+}
+
+.header.dark .hero-container {
+    color: #ffffff; /* Change text color for dark mode */
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ff5722; /* Primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px; /* Adjusted font size for buttons */
+    margin: 10px; /* Added margin for spacing */
+}
+
+.cta-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+.internship-info {
+    margin-top: 20px; /* Space between main content and internship info */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.internship-info h2 {
+    font-size: 28px; /* Adjusted font size for the internship heading */
+    color: #3498db; /* Primary color for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.internship-info p {
+    font-size: 18px; /* Adjusted font size for the internship description */
+    color: #333; /* Darker text for better readability */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-container {
+        height: auto; /* Allow height to adjust on smaller screens */
+        padding: 40px 20px; /* Adjust padding for smaller screens */
+    }
+
+    .cta-button {
+        font-size: 18px; /* Smaller button font size on mobile */
+    }
+
+    .internship-info h2 {
+        font-size: 24px; /* Smaller heading font size on mobile */
+    }
+
+    .internship-info p {
+        font-size: 16px; /* Smaller paragraph font size on mobile */
+    }
+}

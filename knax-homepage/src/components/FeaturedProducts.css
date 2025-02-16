@@ -1,0 +1,26 @@
+/* knax-homepage/src/components/FeaturedProducts.css */
+.product-card {
+    transition: transform 0.3s; /* Smooth transition for hover effects */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space between elements */
+    height: 100%; /* Ensure all cards are the same height */
+}
+
+.product-image {
+    width: 60%;
+    height: 300px; /* Fixed height for images */
+    border-radius: 8px; /* Rounded corners for images */
+    padding-left: 100px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-card {
+        height: auto; /* Allow auto height on smaller screens */
+    }
+}

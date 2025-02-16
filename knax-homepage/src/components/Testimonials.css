@@ -1,0 +1,30 @@
+/* knax-homepage/src/components/Testimonials.css */
+.testimonials-container {
+    background-color: #f9f9f9; /* Light background for the testimonials section */
+    border-radius: 12px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.header.dark .testimonials-container {
+    background-color: #1c1c1c; /* Dark mode background for testimonials */
+    color: #ffffff; /* Dark mode text color */
+}
+
+.testimonial-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #333;
+}

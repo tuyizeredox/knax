@@ -1,0 +1,85 @@
+/* knax-homepage/src/components/InternshipSection.css */
+.internship-container {
+    background-color: #03dac6; /* Main background color */
+    border-radius: 12px;
+    padding: 50px;
+    margin: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center text for better alignment */
+    position: relative; /* For pseudo-elements */
+}
+
+.internship-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay for depth */
+    border-radius: 12px;
+    z-index: 0; /* Behind the content */
+}
+
+.internship-container h4 {
+    position: relative; /* For stacking with the overlay */
+    z-index: 1; /* Bring text above the overlay */
+}
+
+.internship-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff; /* Card background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    position: relative; /* For stacking context */
+}
+
+.internship-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.internship-card h6 {
+    font-weight: bold;
+    color: #6200ea; /* Use a primary color for headings */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.internship-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.internship-card li {
+    margin: 5px 0; /* Space between list items */
+    color: #333; /* Darker text for better readability */
+}
+
+.button-primary {
+    background-color: #6200ea; /* Primary button color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for button */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.button-primary:hover {
+    background-color: #3700b3; /* Darker shade on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .internship-container {
+        padding: 30px; /* Reduce padding on smaller screens */
+    }
+
+    .internship-card {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
