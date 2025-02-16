@@ -1,4 +1,3 @@
-// src/components/InternshipSection.js
 import React, { useState } from 'react';
 import { Box, Typography, Button, TextField, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import { FaLaptopCode, FaNetworkWired, FaBroadcastTower, FaMicrochip } from 'react-icons/fa';
@@ -36,10 +35,10 @@ const InternshipSection = () => {
                 <Box sx={{ width: '300px', padding: '20px', backgroundColor: '#ffffff', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)', color: '#000' }}>
                     <Typography variant="h6" sx={{ fontWeight: 'bold' }}>📌 Internship Positions:</Typography>
                     <ul>
-                        <li><FaLaptopCode /> Software Development</li>
-                        <li><FaNetworkWired /> Networking & Internet Technology</li>
-                        <li><FaBroadcastTower /> Electronics & Telecommunication</li>
-                        <li><FaMicrochip /> Computer Systems & Architecture</li>
+                        <li><span><FaLaptopCode /></span> Software Development</li>
+                        <li><span><FaNetworkWired /></span> Networking & Internet Technology</li>
+                        <li><span><FaBroadcastTower /></span> Electronics & Telecommunication</li>
+                        <li><span><FaMicrochip /></span> Computer Systems & Architecture</li>
                     </ul>
                 </Box>
             </Box>
@@ -52,7 +51,7 @@ const InternshipSection = () => {
                 <FormControl variant="outlined" sx={{ margin: '10px', width: '300px' }}>
                     <InputLabel id="position-label">Select Position</InputLabel>
                     <Select labelId="position-label" value={position} onChange={(e) => setPosition(e.target.value)} label="Position" sx={{ backgroundColor: '#ffffff', borderRadius: '8px' }}>
-                        <MenuItem value="Software Intern"Software Development</MenuItem>
+                        <MenuItem value="Software Intern">Software Development</MenuItem>
                         <MenuItem value="Marketing Intern">Networking & Internet Technology</MenuItem>
                         <MenuItem value="Design Intern">Electronics & Telecommunication</MenuItem>
                         <MenuItem value="Sales Intern">Computer Systems & Architecture</MenuItem>
